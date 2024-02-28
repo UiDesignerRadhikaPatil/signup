@@ -29,7 +29,7 @@ const OtpInput = () => {
 
     return (
         <>
-            <div className='otp-area'>
+            <div className='otp-area' style={{display:'flex', flexWrap:'wrap', }}>
                 {
                     opt.map((data, i) => {
                         return <input type='text' 

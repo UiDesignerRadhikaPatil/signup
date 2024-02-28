@@ -1,0 +1,35 @@
+/* firmroll.css */
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .section-btn {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .button-container>div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .owner,
+    .Bookkeeper,
+    .Operations,
+    .Admin,
+    .Assistant,
+    .Other,
+    .button-component {
+        width: 100%;
+
+        margin-left: 15%;
+
+    }
+
+    .sec-button {
+        width: 100%;
+
+    }
+}

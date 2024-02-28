@@ -1,0 +1,45 @@
+.contiunebutton-container {
+    display: flex;
+    justify-content: left;
+    margin-left: 15%;
+
+}
+
+.contiunebutton-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contiunebutton-btn>button {
+    height: 6vh;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background: rgb(100, 149, 237);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-top: 10%;
+
+}
+
+.contiunebutton-btn>button:hover {
+    background: rgb(7, 65, 173);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .contiunebutton-container {
+        flex-direction: column;
+
+    }
+
+    .contiunebutton-section {
+        display: flex;
+        width: 100%;
+    }
+
+  
+
+}

@@ -5,19 +5,7 @@ import './stepper.css'
 const CheckoutStepper = ({ stepsConfig = [] }) => {
     const [currentStep, setCurrentStep] = useState(1);
     const [isComplete, setIsComplete] = useState(false);
-    // const [margins, setMargins] = useState({
-    //     marginLeft: 0,
-    //     marginRight: 0,
-    // });
     const stepRef = useRef([]);
-
-    // useEffect(() => {
-    //     setMargins({
-    //         marginLeft: stepRef.current[0].offsetWidth / 2,
-    //         marginRight: stepRef.current[stepsConfig.length - 1].offsetWidth / 2,
-    //     });
-    // }, [stepRef, stepsConfig.length]);
-
     if (!stepsConfig.length) {
         return <></>;
     }
@@ -33,15 +21,12 @@ const CheckoutStepper = ({ stepsConfig = [] }) => {
         });
     };
 
-    // const calculateProgressBarWidth = () => {
-    //     return ((currentStep - 1) / (stepsConfig.length - 1)) * 100;
-    // };
-
+    
     const ActiveComponent = stepsConfig[currentStep - 1]?.Component;
 
     return (
         <>
-            <div className="stepper col-12">
+            <div className="stepper col-6" style={{display:'flex', justifyContent:'left', width:'100%'}}>
                 {stepsConfig.map((step, index) => {
                     return (
                         <div
@@ -66,11 +51,11 @@ const CheckoutStepper = ({ stepsConfig = [] }) => {
                     );
                 })}<ActiveComponent />
                 {/* button to next */}
-                {!isComplete && (
+                {/* {!isComplete && (
                     <button className="btn" onClick={handleNext}>
                         {currentStep === stepsConfig.length ? "Finish" : "Next"}
                     </button>
-                )}
+                )} */}
 
                 {/* <div
                     className="progress-bar"
@@ -98,4 +83,3 @@ export default CheckoutStepper;
 
 
 
-// 123457

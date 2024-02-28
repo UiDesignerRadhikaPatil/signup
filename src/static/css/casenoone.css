@@ -1,0 +1,17 @@
+@import url("./common.css");
+
+
+    /* Media Queries */
+
+    @media (max-width: 768px) {
+        .signupformsub-container {
+            max-width: 100%;
+            margin-top: 40%;
+        }
+
+        .account-btn{
+            width: 100%;
+        }
+
+        
+    }

@@ -1,0 +1,24 @@
+.selectinput-container {
+    display: 'flex';
+    justify-Content: 'left';
+
+}
+
+.selectfield-container {
+    display: 'flex';
+    flex-Direction: 'column';
+    flex-Wrap: 'wrap';
+}
+
+
+@media (max-width: 768px) {
+
+    .selectfield-container{
+        justify-content: center;
+    }	
+
+    .selectfield-container .select-inputbox{
+        width: 100%;
+
+    }
+}

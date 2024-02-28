@@ -1,0 +1,15 @@
+
+
+
+
+@media (max-width: 768px) {
+    .yourinfo-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }	
+
+    .your-input {
+        width: 100%;
+    }
+}

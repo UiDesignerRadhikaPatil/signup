@@ -1,19 +1,31 @@
-.otp-area{
+.otp-area {
     /* width: 70%; */
     margin: 20px auto;
-    display:  flex;
+    display: flex;
     gap: 15px;
 }
-input{
+
+input {
     width: 85px;
     padding: 10px;
-    height: 150px;
+    height: 120px;
     outline: none;
     border-radius: 5px;
     border: none;
     text-align: center;
- font-size: 30px;
-    &:focus{
-        border: 2px solid blue;
+    font-size: 30px;
+    
+
+    &:focus {
+        border: 2px solid #695cfe;
     }
 }
+
+@media (max-width: 768px) {
+
+    .otp-area{
+        padding: 10%;
+        justify-content: center;
+    }	
+}
+
