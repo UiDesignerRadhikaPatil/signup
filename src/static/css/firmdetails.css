@@ -1,0 +1,93 @@
+.range-slider-container {
+    /* width: 80%; */
+    /* margin: 20px auto; */
+}
+
+.range-slider {
+    width: 90%;
+}
+
+.numbering {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.numbering span {
+    width: 30px;
+    text-align: center;
+}
+
+.value {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .firmsdetails-btn {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .button-container>div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+   
+    .google,
+    .g2,
+    .friend,
+    .offline,
+    .social,
+    .accounting {
+        width: 100%;
+        margin-bottom: 2%;
+        margin-right: 3%;
+
+    }
+
+    .google,
+    .g2,
+    .friend,
+    lable {
+        font-size: 18px;
+    }
+
+    .firmsecond-list {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .taxdom,
+    .otherbutton-btn {
+        width: 100%;
+        margin-right: 3%;
+        margin-top: 2%;
+
+    }
+
+    .firm-button {
+        width: 100%;
+    }
+
+   
+    .range-slider{
+        width: 100%;
+    }
+
+    .range-slider-container {
+        display: flex;
+    }
+
+    .slider-input {
+        width: 100%;
+
+    }
+
+
+}

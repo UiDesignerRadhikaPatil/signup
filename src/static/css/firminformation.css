@@ -1,0 +1,50 @@
+
+
+
+@media only screen and (max-width: 768px) {
+
+   .confirmation-header  .header-logo{
+        margin-left: -2%;
+    }
+
+    .firmservices-btn {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .button-container>div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .tax-preparation,
+    .planning,
+    .advisory,
+    .resolution,
+    .payroll,
+    .accounting,
+    .button-component {
+        width: 100%;
+        
+
+    }
+
+    .second-list {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2%
+    }
+
+    .accounting,
+    .audit,
+    .law-firm,
+    .bookkeeping,
+    .other,
+    .accounting
+    {
+        width: 100%;      
+
+    }
+    
+}

@@ -1,0 +1,46 @@
+
+@media only screen and (max-width: 900px) {
+
+
+    .yourinfo-container {
+        flex-direction: row;
+        margin-top: 20%;
+        justify-content: center;
+        
+    }
+
+
+    .info-title h1 {
+        width: 100%;
+   
+        margin-top: 20%;
+    }
+
+    .your-input {
+        width: 100%;
+        
+    
+    }
+
+    .your-input lable {
+        font-size: 16px;
+    }
+
+    .firm-input,
+    .country {
+        width: 100%;
+    }
+
+
+    .states {
+        width: 98%;
+        margin-top: 5%;
+    }
+
+    .firm-info-button {
+        width: 100%;
+        
+    }
+
+
+}

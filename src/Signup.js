@@ -1,9 +1,9 @@
 import React from 'react'
 import '../src/static/css/signup.css'
-import logo from '../src/img/logo.png'
 import { LuPenLine } from "react-icons/lu";
 import OtpInput from './component/OtpInput';
 import Verificationsteps from './component/Verificationsteps';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -36,7 +36,7 @@ const Signup = () => {
         </div>
 
         <div className='resend-code col-12' style={{ display: 'flex', justifyContent: 'center' }}>
-          <p>Didn't Recive it ? <a style={{ color: '#695cfe' }}>Resend Code</a></p>
+          <p>Didn't Recive it ? <NavLink style={{ color: '#695cfe' }}>Resend Code</NavLink></p>
         </div>
 
       </div>

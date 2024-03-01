@@ -1,8 +1,5 @@
 .contiunebutton-container {
     display: flex;
-    justify-content: left;
-    margin-left: 15%;
-
 }
 
 .contiunebutton-section {
@@ -13,7 +10,7 @@
 
 .contiunebutton-btn>button {
     height: 6vh;
-    width: 50%;
+    width: 100%;
     border: none;
     border-radius: 10px;
     color: white;

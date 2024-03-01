@@ -28,7 +28,11 @@
 }
 
 
-@media only screen and (max-width: 768px) {
+
+
+
+@media only screen and (max-width: 900px) {
+
     .firmsetting-container {
         flex-direction: column;
     }
@@ -39,34 +43,40 @@
         width: 100%;
     }
 
-     .url-input  {
+
+    .urlinput {
         width: 100%;
     }
-    .outer-lable{
+
+    .outer-lable {
         margin-top: 0%;
     }
 
+    .currency-section {
+        flex-direction: column;
+
+
+    }
+
+    .currency {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 16px;
+        margin-bottom: 4%;
+        display: flex;
+        flex-direction: column;
+    }
+
     .language-class {
-        margin-top: 4%;
-    }
-    
-    .currency{
-       width: 85%;
-       margin-top: 10px;
-       font-size: 16px;
-       margin-bottom: 4%;
-       display: flex;
-       flex-direction: column;
-    }
-    .language-class{
         display: flex;
         flex-direction: column;
         width: 100%;
-       
+
     }
+
     .imageright-container {
         display: none;
-        
+
     }
-   
+
 }

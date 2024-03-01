@@ -3,7 +3,15 @@
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
+
+    .firmroll-container {
+        margin-top: 10%;
+    }
+
+    .firmrollsub-container h1 {
+        margin-left: 12%;
+    }
 
     .section-btn {
         flex-direction: column;
@@ -20,16 +28,33 @@
     .Operations,
     .Admin,
     .Assistant,
-    .Other,
-    .button-component {
+    .Other {
         width: 100%;
-
         margin-left: 15%;
 
     }
 
-    .sec-button {
-        width: 100%;
+    /* .owner,
+   
+    .Operations,
+    .Admin,
+    .Assistant,
+    .Other lable {
+      font-size: 16px;
+
+    } */
+
+     .Bookkeeper lable {
+        font-size: 16px;
+
+     }
+
+
+    .rol-button {
+        width: 85%;
+        margin-left: 5%;
+
 
     }
 }
+

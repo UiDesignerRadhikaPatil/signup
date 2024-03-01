@@ -1,15 +1,71 @@
-
-
-
-
-@media (max-width: 768px) {
+@media (max-width: 432px) {
     .yourinfo-container {
         display: flex;
         justify-content: center;
         width: 100%;
-    }	
 
-    .your-input {
-        width: 100%;
     }
+
+    .title-info h1 {
+        font-size: 26px;
+        margin-bottom: 10%;
+    }
+
+    .info-class {
+        flex-direction: column;
+        margin-right: 10%;
+
+    }
+
+    .name-1, .info-lastname, .phone{
+        margin-top: 10px;
+        margin: 10px;
+    }
+    .phone{
+        width: 85%;
+        
+    }
+
+    .inormation-button{
+       width: 80%;
+       
+    }
+
+
+}
+
+
+@media (max-width: 900px) {
+    .yourinfo-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .title-info h1 {
+        font-size: 26px;
+        margin-bottom: 10%;
+    }
+
+    .info-class {
+        flex-direction: column;
+        margin-right: 10%;
+
+    }
+
+    .name-1, .info-lastname, .phone{
+        margin-top: 10px;
+        margin: 10px;
+    }
+    .phone{
+        width: 87%; 
+    }
+
+    .inormation-button{
+       width: 90%;
+       
+    }
+
+
 }

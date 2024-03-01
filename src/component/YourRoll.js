@@ -18,35 +18,35 @@ function Firmroll() {
                     </div>
                     <div className='section-btn col-6' style={{ display: 'flex', flexDirection: 'row', gap: '20px', margin: '2%', width: '80%', fontSize: '12px' }}>
                         <div className='owner col-3' >
-                            <button type="button" className="button1" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%', backgroundcolor: 'transparent' }}>Owner or Partner</button>
+                            <button type="button" className="button1" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%', backgroundcolor: 'transparent' }}><lable>Owner or Partner</lable></button>
                         </div>
 
 
                         <div className='Bookkeeper col-3' >
-                            <button type="button" className="button2" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%', backgroundcolor: 'transparent' }} >Bookkeeper or Accountant</button>
+                            <button type="button" className="button2" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%', backgroundcolor: 'transparent' }} ><label>Bookkeeper or Accountant</label></button>
                         </div>
 
                         <div className='Operations col-3' >
-                            <button type="button" className="button3" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%', backgroundcolor: 'transparent' }} >Operations/Office Manager</button>
+                            <button type="button" className="button3" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%', backgroundcolor: 'transparent' }} ><lable>Operations/Office Manager</lable></button>
                         </div>
 
                         <div className='Admin col-3' >
-                            <button type="button" className="button4" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%', backgroundcolor: 'transparent' }} >Admin</button>
+                            <button type="button" className="button4" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%', backgroundcolor: 'transparent' }} ><lable>Admin</lable></button>
                         </div>
 
                         <div className='Assistant col-3' >
-                            <button type="button" className="button5" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%', backgroundcolor: 'transparent' }} >Assistant</button>
+                            <button type="button" className="button5" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%', backgroundcolor: 'transparent' }} ><lable>Assistant</lable></button>
                         </div>
 
 
                         <div className='Other col-3' >
-                            <button type="button" className="button6" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%' }} >Other</button>
+                            <button type="button" className="button6" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%' }} ><lable>Other</lable></button>
                         </div>
 
                     </div>
 
-                    <div style={{marginLeft:'-2.5%'}}>
-                        <div className='col-2 sec-button' >
+                    <div style={{marginLeft:'4px'}}>
+                        <div className='col-2 rol-button' >
                             <Buttoncomponent />
                         </div>
                     </div>

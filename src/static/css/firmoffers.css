@@ -1,0 +1,131 @@
+
+
+
+@media only screen and (max-width: 900px) {
+
+    .firmservices-btn {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .firmservices-btn lable{
+        font-size: 18px;
+    }
+
+    .button-container>div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .tax-preparation,
+    .planning,
+    .advisory,
+    .resolution,
+    .payroll,
+    .accounting,
+    .button-component {
+        width: 100%;
+        
+
+    }
+
+    .second-list {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2%
+    }
+
+    .accounting,
+    .audit,
+    .law-firm,
+    .bookkeeping,
+    .other,
+    .accounting
+    {
+        width: 100%;      
+
+    }
+
+    .second-list lable{
+        font-size: 16px;
+    }
+
+    .sec-button{
+        width: 30%;
+    }
+
+    .check-box{
+        display: flex;
+    }
+
+    .check-box input lable{
+    font-size: 16px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 430px) {
+
+    .firmservices-btn {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .firmservices-btn lable{
+        font-size: 14px;
+    }
+
+    .button-container>div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .tax-preparation,
+    .planning,
+    .advisory,
+    .resolution,
+    .payroll,
+    .accounting,
+    .button-component {
+        width: 100%;
+        
+
+    }
+
+    .second-list {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2%
+    }
+
+    .accounting,
+    .audit,
+    .law-firm,
+    .bookkeeping,
+    .other,
+    .accounting
+    {
+        width: 100%;      
+
+    }
+
+    .second-list lable{
+        font-size: 14px;
+    }
+
+    .sec-button{
+        width: 30%;
+    }
+
+    .check-box{
+        display: flex;
+    }
+
+    .check-box input lable{
+    font-size: 16px;
+    }
+    
+}
