@@ -1,13 +1,33 @@
-import React from 'react'
+import React, { useState, useRef, } from 'react'
 import '../src/static/css/signup.css'
 import { LuPenLine } from "react-icons/lu";
 import OtpInput from './component/OtpInput';
 import Verificationsteps from './component/Verificationsteps';
 import { NavLink } from 'react-router-dom';
+import CheckoutStepper from '../src/component/CheckoutStepper';
+import axios from 'axios';
 
-
+const CHECKOUT_STEPS = [
+  {
+    name: "Email",
+    Component: () => <></>,
+  },
+  {
+    name: "Information",
+    Component: () => <></>,
+  },
+  {
+    name: "Settings",
+    Component: () => <></>,
+  },
+  {
+    name: "Book a session",
+    Component: () => <></>,
+  },
+];
 
 const Signup = () => {
+
   return (
     <>
       <div className='code-confirmation col-12' style={{ height: '80px', padding: '20px 50px 20px 50px' }}>
@@ -15,6 +35,11 @@ const Signup = () => {
           <div className='header-logo col-4'>
             <Verificationsteps />
           </div>
+
+          <div className='form-stepper col-5' >
+            <CheckoutStepper stepsConfig={CHECKOUT_STEPS} />
+          </div>
+
         </div>
 
       </div>
@@ -36,7 +61,7 @@ const Signup = () => {
         </div>
 
         <div className='resend-code col-12' style={{ display: 'flex', justifyContent: 'center' }}>
-          <p>Didn't Recive it ? <NavLink style={{ color: '#695cfe' }}>Resend Code</NavLink></p>
+          <p>Didn't Recive it ? <NavLink to="/" style={{ color: '#695cfe' }}>Resend Code</NavLink></p>
         </div>
 
       </div>

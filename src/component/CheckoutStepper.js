@@ -51,11 +51,11 @@ const CheckoutStepper = ({ stepsConfig = [] }) => {
                     );
                 })}<ActiveComponent />
                 {/* button to next */}
-                {/* {!isComplete && (
+                {!isComplete && (
                     <button className="btn" onClick={handleNext}>
                         {currentStep === stepsConfig.length ? "Finish" : "Next"}
                     </button>
-                )} */}
+                )}
 
                 {/* <div
                     className="progress-bar"

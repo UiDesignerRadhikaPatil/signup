@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Verificationsteps from './Verificationsteps';
 import Selectdropinput from './Selectdropinput';
 import { NavLink } from 'react-router-dom';
@@ -17,6 +17,38 @@ function Datepicker() {
     const onChange = (date) => {
         setDate(date);
     }
+
+    const [languages, setLanguages] = useState([]);
+    const [selectedLanguage, setSelectedLanguage] = useState('');
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('https://query.wikidata.org/sparql?query=SELECT%20%3Flanguage%20%3FlanguageLabel%20WHERE%20%7B%0A%20%20%3Flanguage%20wdt%3AP31%20wd%3AQ34770.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%0A%20%20%7D%0A%7D&format=json');
+                if (!response.ok) {
+                    throw new Error('Failed to fetch languages');
+                }
+                const data = await response.json();
+                const languages = data.results.bindings.map(binding => ({
+                    code: binding.language.value.split('/').pop(),
+                    name: binding.languageLabel.value
+                }));
+                setLanguages(languages);
+            } catch (error) {
+                console.error('Error fetching languages:', error);
+            }
+        };
+
+        fetchData();
+    }, []);
+
+    const handleChange = event => {
+        setSelectedLanguage(event.target.value);
+        // Do something with the selected language
+        console.log('Selected language:', event.target.value);
+    };
+
+
 
     return (
 
@@ -56,8 +88,17 @@ function Datepicker() {
                     <div className='time-zone-container' style={{ display: 'flex', gap: '10px', }}>
 
                         <div className='language-choose col-6' style={{ marginTop: '2%' }}>
-                            <label style={{ fontSize: '16px' }}>choose language</label>
-                            <Selectdropinput />
+                            <label style={{ fontSize: '14px' }}>Default Language</label>
+                            <select className='select-inputbox col-12' style={{ height: '5vh', width: '100%', border: "1px solid rgb(100, 149, 237)", borderRadius: '10px' }} onChange={(e) => setSelectedLanguage(e.target.value)}>
+                                <option value="">Select a language</option>
+                                {languages.map(language => (
+                                    <option key={language.code} value={language.name}>
+                                        {language.name}
+                                    </option>
+                                ))}
+                            </select>
+
+
                         </div>
 
                         <div className='language-choose col-6' style={{ marginTop: '2%' }}>
@@ -78,9 +119,9 @@ function Datepicker() {
                         </div>
 
                         <div className='col-12'>
-                            <div style={{ border: '1px dotted black', height: '50vh', width: '50%', borderRadius: '20px' }}>
+                            <div style={{ border: '1px dotted black', height: '35vh', width: '50%', borderRadius: '20px' }}>
                                 <div className='col-6' style={{ padding: '50%', height: '50px', justifyContent: 'center' }} >
-                                    <LuCalendarClock  className='clock-custom-style'/>
+                                    <LuCalendarClock className='clock-custom-style' />
                                 </div>
                             </div>
                         </div>

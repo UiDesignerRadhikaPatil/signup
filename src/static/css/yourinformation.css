@@ -3,7 +3,6 @@
         display: flex;
         justify-content: center;
         width: 100%;
-
     }
 
     .title-info h1 {
@@ -14,21 +13,27 @@
     .info-class {
         flex-direction: column;
         margin-right: 10%;
-
     }
 
-    .name-1, .info-lastname, .phone{
+    .flex-class {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .name-1,
+    .info-lastname,
+    .phone {
         margin-top: 10px;
         margin: 10px;
     }
-    .phone{
-        width: 85%;
-        
+
+    .phone {
+        width: 100%;
+
     }
 
-    .inormation-button{
-       width: 80%;
-       
+    .inormation-button {
+        width: 80%;
     }
 
 
@@ -54,17 +59,25 @@
 
     }
 
-    .name-1, .info-lastname, .phone{
+    .flex-class {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .name-1,
+    .info-lastname,
+    .phone {
         margin-top: 10px;
         margin: 10px;
     }
-    .phone{
-        width: 87%; 
+
+    .phone {
+        width: 83%;
     }
 
-    .inormation-button{
-       width: 90%;
-       
+    .inormation-button {
+        width: 90%;
+
     }
 
 

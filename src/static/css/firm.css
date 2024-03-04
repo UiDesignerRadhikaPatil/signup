@@ -16,6 +16,7 @@
     .section-btn {
         flex-direction: column;
         flex-wrap: wrap;
+     
     }
 
     .button-container>div {
@@ -34,19 +35,8 @@
 
     }
 
-    /* .owner,
-   
-    .Operations,
-    .Admin,
-    .Assistant,
-    .Other lable {
-      font-size: 16px;
-
-    } */
-
      .Bookkeeper lable {
         font-size: 16px;
-
      }
 
 
